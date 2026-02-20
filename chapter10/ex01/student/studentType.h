@@ -1,4 +1,3 @@
-// Write your code here
 #ifndef H_STUDENTTYPE
 #define H_STUDENTTYPE
 
@@ -9,6 +8,12 @@ using namespace std;
 class studentType
 {
 public:
+    // Constructors
+    studentType();  // default
+    studentType(string fName, string lName,
+                char grade, int tScore,
+                int pScore, double gpa);
+
     // Set functions
     void setFirstName(string val);
     void setLastName(string val);
@@ -24,6 +29,9 @@ public:
     int getTestScore() const;
     int getProgScore() const;
     double getGPA() const;
+
+    // Print function
+    void print() const;
 
 private:
     string firstName;

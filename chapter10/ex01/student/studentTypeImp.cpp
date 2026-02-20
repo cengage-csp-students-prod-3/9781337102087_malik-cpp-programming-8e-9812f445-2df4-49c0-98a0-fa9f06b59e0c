@@ -1,5 +1,31 @@
-// Write your code here
+#include <iostream>
 #include "studentType.h"
+
+using namespace std;
+
+// Default Constructor
+studentType::studentType()
+{
+    firstName = "";
+    lastName = "";
+    courseGrade = 'F';
+    testScore = 0;
+    programmingScore = 0;
+    GPA = 0.0;
+}
+
+// Parameterized Constructor
+studentType::studentType(string fName, string lName,
+                         char grade, int tScore,
+                         int pScore, double gpa)
+{
+    firstName = fName;
+    lastName = lName;
+    courseGrade = grade;
+    testScore = tScore;
+    programmingScore = pScore;
+    GPA = gpa;
+}
 
 // Set functions
 void studentType::setFirstName(string val)
@@ -61,4 +87,15 @@ int studentType::getProgScore() const
 double studentType::getGPA() const
 {
     return GPA;
+}
+
+// Print function
+void studentType::print() const
+{
+    cout << "Name: " << firstName << " " << lastName << endl;
+    cout << "Grade: " << courseGrade << endl;
+    cout << "Test score: " << testScore << endl;
+    cout << "Programming score: " << programmingScore << endl;
+    cout << "GPA: " << GPA << endl;
+    cout << "***************" << endl;
 }
