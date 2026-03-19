@@ -14,12 +14,14 @@ public:
     extClockType();
     extClockType(int hours, int minutes, int seconds, string zone);
 
-    // Setter & Getter
+    // Time Zone Setter & Getter
     void setTimeZone(string zone);
     string getTimeZone() const;
 
-    // Print full time with zone
+    // Print and Set Time
     void printTime() const;
+    void setTime(int hours, int minutes, int seconds, string zone);
+
 
 private:
     string timeZone;
