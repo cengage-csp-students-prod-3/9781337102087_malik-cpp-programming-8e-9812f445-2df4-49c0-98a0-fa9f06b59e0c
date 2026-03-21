@@ -33,7 +33,7 @@ void extClockType::printTime() const
 }
 
 // Set time + time zone
-void extClockType::setTime(int hours, int minutes, int seconds, const char zone[4])
+void extClockType::setTime(int hours, int minutes, int seconds, string zone)
 {
     clockType::setTime(hours, minutes, seconds); // call base class version
     timeZone = zone;
