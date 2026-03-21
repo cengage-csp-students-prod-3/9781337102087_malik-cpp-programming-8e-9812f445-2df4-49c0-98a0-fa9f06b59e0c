@@ -20,7 +20,7 @@ public:
 
     // Print and Set Time
     void printTime() const;
-    void setTime(int hours, int minutes, int seconds, string zone);
+    void setTime(int hours, int minutes, int seconds, const char zone[4]);
 
 
 private:
