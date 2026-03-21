@@ -1,18 +1,21 @@
 
-Status: PASSED!
+Status: FAILED!
 Check: 1
-Test: The `extClockType` class inherits from the `clockType` class
-Reason: public clockType + ` was found in the program.None
-Timestamp: 2026-03-21 15:17:13.743133
+Test: 
+Reason: 
+Error : RuntimeError - There was an issue compiling the c++ files.
+Timestamp: 2026-03-21 15:19:25.209976
 
-Status: PASSED!
+Status: FAILED!
 Check: 2
-Test: The class `extClockType` is derived from the class `clockType`, test 1
-Reason: None
-Timestamp: 2026-03-21 15:17:13.745899
+Test: 
+Reason: 
+Error : RuntimeError - There was an issue compiling the c++ files.
+Timestamp: 2026-03-21 15:19:25.210252
 
-Status: PASSED!
+Status: FAILED!
 Check: 3
-Test: The class `extClockType` is derived from the class `clockType`, test 2
-Reason: None
-Timestamp: 2026-03-21 15:17:13.748157
+Test: 
+Reason: 
+Error : RuntimeError - There was an issue compiling the c++ files.
+Timestamp: 2026-03-21 15:19:25.210487
