@@ -15,13 +15,15 @@ double rectangleType::perimeter() const { return 2 * (length + width); }
 
 // Part 1: Increment/Decrement
 rectangleType rectangleType::operator++() {
-    length++; width++;
+    length++;
+    width++;
     return *this;
 }
 
 rectangleType rectangleType::operator--() {
     if (length > 1 && width > 1) {
-        length--; width--;
+        length--;
+        width--;
     }
     return *this;
 }

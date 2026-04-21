@@ -4,9 +4,9 @@
 using namespace std;
 
 int main() {
-    rectangleType yard1(10, 5); // Area 50
-    rectangleType yard2(8, 4);  // Area 32
-    rectangleType yard3(5, 10); // Area 50
+    rectangleType yard1(10, 6);  // Area 60
+    rectangleType yard2(8, 4);   // Area 32
+    rectangleType yard3(5, 10);  // Area 50
 
     cout << "Yard 1: " << yard1 << endl;
     cout << "Yard 2: " << yard2 << endl;
