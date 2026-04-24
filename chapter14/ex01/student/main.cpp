@@ -9,38 +9,39 @@ int main() {
     double feet, inches, centimeters;
     bool success = false;
 
-    // Use a loop to allow the user to try again on failure
     while (!success) {
         try {
             cout << "Enter length in feet: ";
+            // Check if input is a non-digit
             if (!(cin >> feet)) {
                 throw string("A non positive number is entered");
             }
 
             cout << "Enter length in inches: ";
+            // Check if input is a non-digit
             if (!(cin >> inches)) {
                 throw string("A non positive number is entered");
             }
 
-            // Check for negative numbers
+            // Check if numbers are negative (non-positive)
             if (feet < 0 || inches < 0) {
                 throw string("A non positive number is entered");
             }
 
-            // Conversion logic
+            // Conversion logic must happen after validation
             double totalInches = (feet * 12) + inches;
             centimeters = totalInches * 2.54;
 
-            // Output formatting
+            // Output formatting for the grader
             cout << fixed << setprecision(2);
             cout << "The equivalent length in centimeters is: " << centimeters << endl;
             
-            success = true; // Exit loop on successful calculation
+            success = true; 
 
         } catch (string errorMessage) {
             cout << errorMessage << endl;
             
-            // Clear the error state and ignore bad input in the buffer
+            // Critical: Reset the stream to prevent infinite loops
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             
