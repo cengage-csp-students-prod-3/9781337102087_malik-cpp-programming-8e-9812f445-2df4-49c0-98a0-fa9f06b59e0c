@@ -1,14 +1,6 @@
 
-Status: FAILED!
-Reason: Unable to run main.cpp
-Error: The program took longer than 5 seconds to execute.
-This may indicate an issue providing input to your program.
-Check your program follows the example in the instructions.
-Timestamp: 2026-04-24 01:37:20.697605
-
-Status: FAILED!
-Reason: Unable to run main.cpp
-Error: The program took longer than 5 seconds to execute.
-This may indicate an issue providing input to your program.
-Check your program follows the example in the instructions.
-Timestamp: 2026-04-24 01:37:20.697778
+Status: PASSED!
+Check: 1
+Test: Negative number entered
+Reason: None
+Timestamp: 2026-04-24 01:38:10.644448
